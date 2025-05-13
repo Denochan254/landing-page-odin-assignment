@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.wrapper { 
+    max-inline-size: 1280px;
+    margin-inline: auto;
+}
+
+.header {
+    display: flex;
+    gap: 60px;
+    padding-inline: 60px;
+    justify-content: space-between;
+    margin-inline-end: 60px;
+}
+
+.primary-navigation {
+    display: flex;
+    gap: 20px;
+}
+
+a {
+    font: 18px #e5e7eb;
+    min width: 200px;
+    color: white;
+    text-decoration: none;
+}
+
+
+li::marker {
+   content:none; 
+}
+
+h1 {
+    font: 48px #f9faf8 900;
+    background-color: #1f2937;
+}
+
+.black-bg {
+    color: white;
+    background-color: #1f2937;
+}
+
+.signup-button {
+    padding: 10px 20px;
+    background-color: #3882f6;
+    color: white;
+    border: none;
+    border-radius: 12px; 
+    font-size: 16px;
+}
+
+.two-column {
+    display: flex;
+    gap: 60px;
+    padding: 60px;
+    margin-inline-end: 60px;
+    flex-wrap: wrap column;
+ 
+    @media (width > 600px) {
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+
+
+ul li::marker {
+    content:  ;
+}
+
+h2 {
+font-family: Roboto, sans-serif;
+text-align: center;
+margin: 40px;
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 40px;
+}
+
+img {
+    padding-bottom: 40px;
+    margin-bottom: 0%;
+}
+
+.container {
+display: flex;
+justify-content: center;
+gap: 20px;
+flex-wrap: wrap;
+}
+
+.box {
+width: 100px;
+height: 100px;
+border: 2px solid #4285f4;
+border-radius: 12px;
+margin: 0 auto;
+}
+
+.item {
+max-width: 120px;
+text-align: center;
+font-size: 12px;
+color: #444;
+}
+
+.subtext {
+margin-top: 10px;
+}
+
+.quote-section {
+background-color: #e5e7eb; /* light gray */
+padding: 60px 20px;
+text-align: center;
+font-family: 'Arial', sans-serif;
+margin-block: 60px;
+}
+
+.quote-text {
+    font-style: italic;
+    max-width: 820px;
+    margin-inline: 200px;
+    color: #374151;
+    font-size: 36px;
+    line-height: 1;
+    text-align: left;
+}
+
+.quote-author {
+    text-align: right;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #1f2937;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.action-call {
+    color: white;
+    background-color: #3882f6;
+    padding: 30px 300px 30px 60px;
+    border-radius: 12px;
+    display: flex;
+    gap: 60px;
+    justify-content: space-between;
+}
+
+.signup-button-border {
+    padding-inline: 20px; /* ✅ Add vertical padding */
+    padding-top: 0%;
+    background-color: #3882f6;
+    color: white;
+    border: 2px solid white; /* ✅ 5px was a bit thick */
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+footer {
+    text-align: center;
+    background-color: #1f2937;
+    color: white;
+    padding: 20px;
+    margin-block: 50px;
+}
