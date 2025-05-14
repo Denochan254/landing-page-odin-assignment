@@ -63,15 +63,18 @@ h1 {
 
 .two-column {
     display: flex;
-    gap: 20px;
-    padding: 60px;
-    margin-inline-end: 0px;
-    flex-wrap: wrap column;
- 
-    @media (width > 600px) {
-        grid-template-columns: 1fr 1fr; 
-    }
-}
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .two-column > div,
+  .two-column > img {
+    flex: 1 1 300px; 
+    max-width: 100%;
+  }
 
 
 ul li::marker {
@@ -134,6 +137,7 @@ margin-block: 60px;
     font-size: 36px;
     line-height: 1;
     text-align: left;
+    justify-content: center;
 }
 
 .quote-author {
